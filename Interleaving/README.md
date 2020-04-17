@@ -51,7 +51,7 @@ Done Normally
 </pre>
 </details>
 
-**Analysis**
+**Initial Analysis - Wrong**
 <details>
   <summary> Click </summary>
   <p>
@@ -62,3 +62,6 @@ Done Normally
   In the solvealt function, essentially the K different arrays have their operations interleaved, which makes sure there is no immediate data dependencies.
   This is the justification for solvealt being significantly faster.
 </details>
+
+**Correct Analysis**
+Cache optimization overpowers the effects of small issues like Data Dependency. The above faster result just serves the example of cache being significantly faster. 
