@@ -56,7 +56,7 @@ Done Normally
   <summary> Click </summary>
   <p>
   Assuming the Fetch-Decode-Execute-Memory-Writeback model, most modern architectures can take multiple commands in the pipeline, keeping them in different stages. 
-  If an instruction depends on a value computed in the immediate previous instruction, it is highly likely the processor will sit idle for sometime.
+  If an instruction depends on a value computed in the immediate previous instruction, it is highly likely the processor will sit idle for sometime (clock cycles).
   This is because the processor has to wait for the 'Memory' stage of the last instruction to get over before the 'Decode' stage of the current instruction is used.
   In the solve function, each computation is dependent on the previous instruction.
   In the solvealt function, essentially the K different arrays have their operations interleaved, which makes sure there is no immediate data dependencies.
